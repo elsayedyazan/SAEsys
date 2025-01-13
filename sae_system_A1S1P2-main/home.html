@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/main/style.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap/bootstrap-icons.css" rel="stylesheet">
+
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <div class="container-fluid" id="navbar-container">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="home.html">SAE</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="home.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="report.html">Report</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="timeline.html">Timeline</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="commentary.html">English Commentary</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+
+<!-------------------------------------
+    <div class="container my-5 text-white back-dark" >
+        <div class="row gy-4 ">
+            <div class="col-12 text-lg-center ">
+                <div class="card bg-transparent border-0">
+                    <div class="card-body border-0">
+                        <h2>Entête et conclusion des composants avec cartes</h2>
+                        <p>À partir de 992px, les textes sont centrés horizontalement.<br>Pour optimiser l'affichage, utilisez des phrases qui tiennent sur une ligne pour ce breakpoint.</p>
+                        <p>L'entête et la conclusion sont incluse dans une carte sans bordure et avec un fond transparent.<br>Cette astuce permet d'aligner les textes à gauche avec les autres cartes sur les petits écrans.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12  back-dark" >
+                <div class="card  back-dark ">
+                    <div class="row g-0">
+                        <div class="col-lg-6 d-lg-flex align-items-lg-center">
+                            <picture class="d-block mt-3 mx-3 mb-lg-3"><img class="rounded border w-100" alt="SiteBoostEdit" src="https://siteboostedit.com/assets/img/lg/sbe-orange-medium-lg-dark.png"></picture>
+                        </div>
+                        <div class="col-lg-6 d-lg-flex align-items-lg-center">
+                            <div class="card-body px-lg-4">
+                                <h3>Composant carte avec images alternées</h3>
+                                <h4>Caractéristiques sur grands écrans&nbsp;:</h4>
+                                <ul>
+                                    <li>Les zones d'image et de texte sont centrées verticalement avec les classes flexbox.</li>
+                                    <li>L'entête et la conclusion sont centrés horizontalement.</li>
+                                    <li>L'espacement entre le texte et l'image est agrandi avec la classe&nbsp;<code>.px‑lg‑4</code>.</li>
+                                </ul>
+                                <h4>Caractéristiques sur petits écrans&nbsp;:</h4>
+                                <ul>
+                                    <li>L'entête et la conclusion sont alignés à gauche.</li>
+                                    <li>Toutes les images sont positionnées en haut.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="card back-dark">
+                    <div class="row g-0">
+                        <div class="col-lg-6 d-lg-flex align-items-lg-center order-lg-last">
+                            <picture class="d-block mt-3 mx-3 mb-lg-3"><img class="rounded border w-100" alt="SiteBoostEdit" src="https://siteboostedit.com/assets/img/lg/sbe-orange-classic-lg-light.png"></picture>
+                        </div>
+                        <div class="col-lg-6 d-lg-flex align-items-lg-center">
+                            <div class="card-body px-lg-4">
+                                <h3>SBE Text Image alternate card</h3>
+                                <h4>Utilisation</h4>
+                                <p>Les composants de type <strong>Text Image</strong> permettent d'afficher des images et des textes côte à côte ou sur une colonne pour les écrans inférieurs à 992px.</p>
+                                <p>La classe&nbsp;<code>.order‑lg‑last</code>&nbsp;place l'image à droite sur les grands écrans.</p>
+                                <h4>Boutons</h4>
+                                <ul>
+                                    <li>Les boutons sont centrés et espacés dans une balise <strong>div</strong> (classes <code>.my‑2</code> et <code>.m‑2</code>).</li>
+                                    <li>Les marges autour des boutons optimisent le positionnement sur une colonne.</li>
+                                </ul>
+                                <div class="text-center py-2"><button class="btn btn-primary btn-lg m-2" type="button">Bouton taille LG</button><a class="btn btn-primary m-2" role="button" href="#">Bouton de type lien</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 text-lg-center text-white">
+                <div class="card bg-transparent border-0">
+                    <div class="card-body">
+                        <h3 class="h5">Zone de conclusion facultative</h3>
+                        <p class="lead">Découvrez un arc-en-ciel de couleurs pour vos thèmes CSS sur <a href="https://siteboostedit.com/en/solution-bootstrap.html" target="_blank">siteboostedit.com</a><br>En plus du choix des couleurs, la taille des textes s'adapte à tous les écrans, allant de 16 à 18 pixels.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+>
+------------------------------------->
+    <div class="container my-5 text-white back-dark">
+        <div class="row gy-4">
+            <!-- Carte 1 : Définition de la virtualisation -->
+            <div class="col-12">
+                <div class="card back-dark">
+                    <div class="row g-0">
+                        <div class="col-lg-4 d-flex align-items-center justify-content-center">
+                            <img src="assets/img/virtualization-definition.png" alt="Virtualisation" class="img-fluid rounded m-3">
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="card-body">
+                                <h3><i class="bi bi-laptop"></i> Définition de la Virtualisation</h3>
+                                <p>La virtualisation est une technologie qui permet de créer une version virtuelle d'une ressource physique, comme un serveur, un poste de travail, un système d'exploitation, un stockage ou un réseau. Elle offre la possibilité d’exécuter plusieurs systèmes d’exploitation ou applications sur une seule machine physique, optimisant ainsi l’utilisation des ressources.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte 2 : Différence entre Émulateur, Simulateur et Outil de Virtualisation -->
+            <div class="col-12">
+                <div class="card back-dark">
+                    <div class="row g-0">
+                        <div class="col-lg-4 d-flex align-items-center justify-content-center">
+                            <img src="assets/img/emulation-vs-virtualization.png" alt="Émulateur vs Simulateur" class="img-fluid rounded m-3">
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="card-body">
+                                <h3><i class="bi bi-arrows-angle-contract"></i> Différence entre Émulateur, Simulateur et Outil de Virtualisation</h3>
+                                <ul>
+                                    <li><strong>Émulateur :</strong> Reproduit entièrement le comportement d'un autre système (matériel et logiciel). Il est souvent utilisé pour exécuter des logiciels conçus pour des architectures différentes.</li>
+                                    <li><strong>Simulateur :</strong> Imitation d’un système pour tester ou prédire son comportement. Contrairement à l'émulateur, il ne reproduit pas toutes les fonctionnalités.</li>
+                                    <li><strong>Outil de Virtualisation :</strong> Permet d'exécuter plusieurs systèmes d'exploitation sur une machine physique en partageant ses ressources. Contrairement à un émulateur, il repose sur l'architecture matérielle existante.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte 3 : Type de virtualisation pour VirtualBox, VmWare Workstation et Stratus -->
+            <div class="col-12">
+                <div class="card back-dark">
+                    <div class="row g-0">
+                        <div class="col-lg-4 d-flex align-items-center justify-content-center">
+                            <img src="assets/img/virtualbox-vmware-stratus.png" alt="Types de Virtualisation" class="img-fluid rounded m-3">
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="card-body">
+                                <h3><i class="bi bi-server"></i> Types de Virtualisation pour VirtualBox, VMware Workstation et Stratus</h3>
+                                <ul>
+                                    <li><strong>VirtualBox :</strong> Virtualisation de type 2 (hyperviseur hébergé), fonctionnant au-dessus d’un système d’exploitation hôte.</li>
+                                    <li><strong>VMware Workstation :</strong> Virtualisation de type 2, également basée sur un système d’exploitation hôte. Il est conçu pour les développeurs et testeurs.</li>
+                                    <li><strong>Stratus :</strong> Virtualisation de type 1 (hyperviseur natif), utilisé dans des environnements critiques pour la haute disponibilité et la tolérance aux pannes.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------------------->
+    <footer class="container-fluid" id="footer">
+        <div class="container-fluid" id="footer-logo">
+            <a href="https://www.iut.parisdescartes.fr/">
+                <img src="assets/img/Logo_Université_de_Paris.svg-2.png" width="100%" alt="Logo IUT">
+            </a>
+        </div>
+        <div class="container-fluid" id="footer-content">
+            <p>&copy; 2025 IUT Paris Rives de Seine. Tout droits r&eacute;serv&eacute;s.</p>
+        </div>
+    </footer>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+</body>
+</html>

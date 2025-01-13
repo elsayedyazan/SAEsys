@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/main/style.css" rel="stylesheet" type="text/css">
+    <title>Report</title>
+</head>
+<body>
+    <header>
+        <div class="container-fluid" id="navbar-container">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="home.html">SAE</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="home.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="report.html">Report</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="timeline.html">Timeline</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="commentary.html">English Commentary</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+<!------------------------------------------------------>
+    <section class="sauvegarde-section mb-5">
+        <h2 class="text-center mb-4"><i class="bi bi-folder2-open"></i> Forme et Lieu de Sauvegarde</h2>
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="assets/img/sauvegarde.png" alt="Sauvegarde VM" class="img-fluid rounded border-light">
+            </div>
+            <div class="col-md-6">
+                <p>Les fichiers de la machine virtuelle sont sauvegardés sur un disque dur local, avec les éléments suivants :</p>
+                <ul>
+                    <li><strong>Fichier disque virtuel :</strong> <code>.vdi</code>, <code>.vmdk</code>, etc.</li>
+                    <li><strong>Fichiers de configuration :</strong> <code>.vbox</code>, <code>.vmx</code>.</li>
+                    <li><strong>Snapshots :</strong> Sauvegardes d'états intermédiaires.</li>
+                </ul>
+                <p>Le choix d'un SSD améliore les performances, tandis qu'un disque externe peut être utilisé pour des sauvegardes supplémentaires.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="choix-techniques-section mb-5">
+        <h2 class="text-center mb-4"><i class="bi bi-gear-fill"></i> Choix Techniques</h2>
+        <div class="accordion accordion-flush" id="technicalChoicesAccordion">
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="headingOS">
+                    <button class="accordion-button text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOS" aria-expanded="true" aria-controls="collapseOS">
+                        Choix du Système d’Exploitation
+                    </button>
+                </h3>
+                <div id="collapseOS" class="accordion-collapse collapse show" aria-labelledby="headingOS" data-bs-parent="#technicalChoicesAccordion">
+                    <div class="accordion-body">
+                        <p>Nous avons choisi <strong>Ubuntu 22.04</strong> pour sa légèreté, sa gratuité et sa compatibilité avec notre environnement de développement.</p>
+                        <img src="assets/img/ubuntu.png" alt="Ubuntu" class="img-fluid rounded border-light">
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="headingResources">
+                    <button class="accordion-button collapsed text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseResources" aria-expanded="false" aria-controls="collapseResources">
+                        Configuration des Ressources
+                    </button>
+                </h3>
+                <div id="collapseResources" class="accordion-collapse collapse" aria-labelledby="headingResources" data-bs-parent="#technicalChoicesAccordion">
+                    <div class="accordion-body">
+                        <ul>
+                            <li><strong>Processeur :</strong> 2 cœurs pour un bon compromis entre performance et disponibilité des ressources.</li>
+                            <li><strong>Mémoire vive :</strong> 4 Go pour garantir une exécution fluide.</li>
+                            <li><strong>Stockage :</strong> Disque dynamique de 20 Go pour économiser de l'espace disque.</li>
+                            <li><strong>Réseau :</strong> Mode NAT pour un accès facile à Internet.</li>
+                        </ul>
+                        <img src="assets/img/resources.png" alt="Configuration Ressources" class="img-fluid rounded border-light mt-3">
+                        <img src="assets/img/resources2.png" alt="Configuration Ressources" class="img-fluid rounded border-light mt-3">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="headingNetwork">
+                    <button class="accordion-button collapsed text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNetwork" aria-expanded="false" aria-controls="collapseNetwork">
+                        Configuration Réseau
+                    </button>
+                </h3>
+                <div id="collapseNetwork" class="accordion-collapse collapse" aria-labelledby="headingNetwork" data-bs-parent="#technicalChoicesAccordion">
+                    <div class="accordion-body">
+                        <p>Le mode <strong>ACCÈS PAR PONT</strong> a été ensuit choisi pour permettre à la machine virtuelle de se connecter à Internet sans configuration réseau complexe
+                        et afin de poster le serveur hébergeant le site en ligne.</p>
+                        <img src="assets/img/network.png" alt="Configuration Réseau" class="img-fluid rounded border-light">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+<!------------------------------------------------------------------creation des utilisateur -------------------------------->
+    <section class="choix-techniques-section mb-5">
+        <h2 class="text-center mb-4"><i class="bi bi-person-fill"></i> Création des Utilisateurs</h2>
+        <div class="accordion accordion-flush" id="usersCreationAccordion">
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="headingUser1">
+                    <button class="accordion-button text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUser1" aria-expanded="true" aria-controls="collapseUser1">
+                        Configuration des Utilisateurs
+                    </button>
+                </h3>
+                <div id="collapseUser1" class="accordion-collapse collapse show" aria-labelledby="headingUser1" data-bs-parent="#usersCreationAccordion">
+                    <div class="accordion-body">
+                        <p>nous avons rencontré un problème à cause de la norme de Linux concernant la nomination des utilisateurs donc il fallait utiliser l'option <span>--allow-bad-names</span> :</p>
+                        <ul>
+                            <li> <strong>Création</strong> d’un compte administrateur :
+                                <ul><li>sudo adduser --allow-bad-names admin_Gr101_BinomeG5</li>
+                                    <li>sudo usermod -aG sudo admin_Gr101_BinomeG5</li></ul>
+                            </li>
+                            <!--arriver ici----------------------------->
+                            <li><strong>Utilisateur standard :</strong> Accès limité pour des tâches courantes.</li>
+                            <li><strong>Invité :</strong> Accès temporaire sans droits d'administration.</li>
+                        </ul>
+                        <img src="assets/img/users-roles.png" alt="Configuration des rôles utilisateurs" class="img-fluid rounded border-light">
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="headingUser2">
+                    <button class="accordion-button collapsed text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUser2" aria-expanded="false" aria-controls="collapseUser2">
+                        Gestion des Groupes
+                    </button>
+                </h3>
+                <div id="collapseUser2" class="accordion-collapse collapse" aria-labelledby="headingUser2" data-bs-parent="#usersCreationAccordion">
+                    <div class="accordion-body">
+                        <p>Les utilisateurs sont regroupés selon leurs responsabilités :</p>
+                        <ul>
+                            <li><strong>Développement :</strong> Accès aux outils et environnements de développement.</li>
+                            <li><strong>Support :</strong> Gestion des incidents et dépannage.</li>
+                            <li><strong>Sécurité :</strong> Surveillance et protection des données.</li>
+                        </ul>
+                        <img src="assets/img/user-groups.png" alt="Gestion des groupes" class="img-fluid rounded border-light mt-3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--<section class="choix-techniques-section mb-5">
+        <h2 class="text-center mb-4"><i class="bi bi-gear-fill"></i> Creation des utilisateur</h2>
+        <div class="accordion accordion-flush" id="UsersCreation"  >
+            <div class="accordion-item">
+                <h3 class="accordion-header" >
+                    <button class="accordion-button text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOS" aria-expanded="true" aria-controls="collapseOS">
+                        Choix du Système d’Exploitation
+                    </button>
+                </h3>
+                <div  class="accordion-collapse collapse show" aria-labelledby="headingOS" data-bs-parent="#UsersCreation">
+                    <div class="accordion-body">
+                        <p>Nous avons choisi <strong>Ubuntu 22.04</strong> pour sa légèreté, sa gratuité et sa compatibilité avec notre environnement de développement.</p>
+                        <img src="assets/img/ubuntu.png" alt="Ubuntu" class="img-fluid rounded border-light">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section> -->
+
+
+
+
+    <!------------------------------------------------------>
+
+    <footer class="container-fluid" id="footer">
+        <div class="container-fluid" id="footer-logo">
+            <a href="https://www.iut.parisdescartes.fr/">
+                <img src="assets/img/Logo_Université_de_Paris.svg-2.png" width="100%" alt="Logo IUT">
+            </a>
+        </div>
+        <div class="container-fluid" id="footer-content">
+            <p>&copy; 2025 IUT Paris Rives de Seine. Tout droits r&eacute;serv&eacute;s.</p>
+        </div>
+    </footer>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+</body>
+</html>
